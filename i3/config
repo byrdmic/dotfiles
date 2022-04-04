@@ -190,7 +190,7 @@ bar {
         separator $white2
 
         #                   border background text
-        focused_workspace   $background $background $red1
+        focused_workspace   $background $background $green1
         active_workspace    $black2 $black1 $white2
         inactive_workspace  $black1 $black2 $foreground
         urgent_workspace    $red1 $red1 $white2
