@@ -306,3 +306,5 @@ mode "$mode_display" {
 }
 
 bindsym $mod+x mode "$mode_display"
+
+exec --no-startup-id sh "$HOME/.config/X11/monitor.sh"
