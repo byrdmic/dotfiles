@@ -35,6 +35,7 @@
 *.color15: #e4e4e4
 
 URxvt*font: xft:DejaVuSansMono:size=12:antialias=true
+! URxvt*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=14:pixelsize=16:antialias=true
 
 URxvt*borderLess: false
 URxvt*externalBorder: 0
