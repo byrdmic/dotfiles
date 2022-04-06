@@ -29,3 +29,12 @@ ftmuxp() {
         tmuxp load "$ID"
     fi
 }
+
+# open man pages with nvim
+vman() {
+    nvim -c "SuperMan $*"
+
+    if [ "$?" != "0" ]; then
+        echo "No manual entry for $*"
+    fi
+}
