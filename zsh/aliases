@@ -1,8 +1,15 @@
 alias ll='ls -lah'
+
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
 alias gs='git status'
+alias gd='git diff'
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd + ${index}"; unset index
+
+alias tls='tmux list-sessions'
+alias tas='tmux attach-session -t'
+alias tns='tmux new-session -s'
+alias tks='tmux kill-session -t'

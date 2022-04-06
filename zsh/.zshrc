@@ -14,8 +14,9 @@ fpath=($ZDOTDIR/external $fpath)
 # Setup a nice pretty prompt
 autoload -Uz prompt_purification_setup; prompt_purification_setup
 
-# Directory push and pop
-#
+
+# Directory push and pop #
+
 # Push the current directory visited on to the stack
 setopt AUTO_PUSHD
 # Do not store duplicate directories in the stack
@@ -47,6 +48,11 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Jumping to a parent directory
 source ~/dotfiles/zsh/external/bd.zsh
+
+# Remove ctrl + l to clear screen (instead used for navigation)
+bindkey -r '^l'
+bindkey -r '^g'
+bindkey -s '^g' 'clear\n'
 
 # Automation stuff
 source $DOTFILES/zsh/scripts.sh
